@@ -6,7 +6,7 @@ class Sockets {
 
         this.io = io;
 
-        this.BandList = new BandList();
+        this.bandList = new BandList();
 
         this.socketEvents();
     }
@@ -19,6 +19,7 @@ class Sockets {
 
             //emitir al cliente conectado a todas las bandas actuales
             socket.emit ('hola', this.bandList.getBands());
+
 
             //votar por la banda
             socket.on ('votar-banda',(id) =>{
