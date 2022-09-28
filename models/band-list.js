@@ -14,7 +14,7 @@ class BandList {
 
     addBand (name){ // añado bandas
 
-        const newBand = newBand (name);
+        const newBand = new Band (name);
         this.bands.push(newBand);
         return this.bands;
 
@@ -40,7 +40,7 @@ class BandList {
     changeName(id, newName){ // incremento el nombre
         this.bands =this.bands.map(band => {
 
-            if (band.id == id){
+            if (band.id === id){
                 band.name = newName;
             }
             return newBand;

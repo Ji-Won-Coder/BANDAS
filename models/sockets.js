@@ -34,9 +34,9 @@ class Sockets {
             });
             
             //cambiar nombre de banda
-            socket.on ('cambiar-nombre-banda',(id) =>{
+            socket.on ('cambiar-nombre-banda',({id , nombre}) =>{
                 this.bandList.changeName(id,nombre);
-                this.io.emit('hola',this.bandList.getBands() );
+                this.io.emit('hola', this.bandList.getBands() );
             });
 
             //crear nueva banda
