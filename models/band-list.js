@@ -4,10 +4,10 @@ class BandList {
     constructor(){ //arreglo de bandas
 
         this.bands = [
-            new Band('Hanagaki'),
-            new Band('sano'),
-            new Band('TR'),
-            new Band('ok'),
+            new Band('GATO'),
+            new Band('OTAG'),
+            new Band('TAGO'),
+            new Band('TOGA'),
         ];
 
     }
